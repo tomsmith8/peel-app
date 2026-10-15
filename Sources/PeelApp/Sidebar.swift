@@ -683,7 +683,7 @@ private struct AutomationsLink: View {
 
     var body: some View {
         let failed = model.automations.failed
-        SidebarLink("Automations", to: .automations) {
+        SidebarLink("Janitors", to: .automations) {
             Image(systemName: "clock.arrow.circlepath").font(.system(size: 13))
         } accessory: {
             if failed > 0 { Badge(count: failed, .outline) }
